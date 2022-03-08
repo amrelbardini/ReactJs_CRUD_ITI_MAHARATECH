@@ -99,7 +99,7 @@ class App extends Component {
     this.setState({products});
     try{
         //call backend 
-     await axios.delete("http://localhost:3000/products/111"+product.id);
+     await axios.delete("http://localhost:3000/products/"+product.id);
 
     }catch(ex){
         toast.error('can not delete calling server failed!');
