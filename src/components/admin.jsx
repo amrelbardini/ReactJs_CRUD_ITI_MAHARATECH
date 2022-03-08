@@ -8,8 +8,9 @@ const Admin = (props) => {
     return (
         <React.Fragment>    
             <div className='products container-fluid'>
-                    <h2>Admin</h2>
-                    <button onClick={()=>navigate('/admin/adminproducts/new')} className="btn btn-primary" >ADD</button>
+                    <h2 className='m-2 text-center'>Add Product
+                        <button onClick={()=>navigate('/admin/adminproducts/new')} className="btn btn-primary m-2" >ADD</button>
+                    </h2>
                     <table className="table">
                     <thead>
                         <tr>
